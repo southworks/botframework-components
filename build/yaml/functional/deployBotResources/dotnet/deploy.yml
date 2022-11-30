@@ -154,6 +154,17 @@ stages:
                 botName: "${{ bot.displayName }}"
               version: "$(BOTBUILDERVERSIONNUMBER)"
 
+          # Zip bot
+          - task: ArchiveFiles@2
+            displayName: 'Zip bot'
+            inputs:
+              rootFolderOrFile: '$(SOLUTIONDIR)/${{ bot.project.name }}'
+              includeRootFolder: false
+              archiveType: 'zip'
+              archiveFile: '$(SYSTEM.DEFAULTWORKINGDIRECTORY)/${{ parameters.buildFolder }}/${{ bot.name }}/${{ bot.name }}.zip'
+              replaceExistingArchive: true
+              verbose: true
+
           # Upload zip to artifacts in case we want to debug it
           - task: PublishBuildArtifacts@1
             displayName: 'Publish zip package'
