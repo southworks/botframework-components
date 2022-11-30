@@ -97,7 +97,7 @@ stages:
           - template: ../generator/deploy.yml
             parameters:
               project: "${{ bot.project }}"
-              solutiondir: "$(SOLUTIONDIR)"              
+              solutiondir: "$(SOLUTIONDIR)"
 
           # Start of DotNet Install & Build
           - ${{ if in(bot.type, 'Host', 'Skill') }}:
@@ -111,17 +111,24 @@ stages:
                 packages:
                   Microsoft.Bot.Builder.AI.Luis
                   Microsoft.Bot.Builder.AI.QnA
-                  Microsoft.Bot.Builder.Dialogs.Adaptive.Runtime                  
+                  Microsoft.Bot.Builder.Dialogs.Adaptive.Runtime
 
             # Build Bot
-            - task: DotNetCoreCLI@2
+            - task: MSBuild@1
               displayName: "Build"
               inputs:
-                command: publish
-                publishWebProjects: false
-                projects: "$(SOLUTIONDIR)/${{ bot.project.name }}/${{ bot.project.name }}.csproj"
-                arguments: "--output $(SYSTEM.DEFAULTWORKINGDIRECTORY)/${{ parameters.buildFolder }}/${{ bot.name }}"
-                modifyOutputPath: false
+                solution: "$(SOLUTIONDIR)/${{ bot.project.name }}/${{ bot.project.name }}.csproj"
+                vsVersion: 16.0
+                platform: "$(BUILDPLATFORM)"
+                configuration: "$(BUILDCONFIGURATION)"
+            # - task: DotNetCoreCLI@2
+            #   displayName: "Build"
+            #   inputs:
+            #     command: publish
+            #     publishWebProjects: false
+            #     projects: "$(SOLUTIONDIR)/${{ bot.project.name }}/${{ bot.project.name }}.csproj"
+            #     arguments: "--output $(SYSTEM.DEFAULTWORKINGDIRECTORY)/${{ parameters.buildFolder }}/${{ bot.name }}"
+            #     modifyOutputPath: false
 
             # Get BotBuilder package version
             - task: PowerShell@2
