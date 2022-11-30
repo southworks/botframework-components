@@ -46,11 +46,11 @@ stages:
         steps:
         - template: nuget-versioning-steps.yml
         - template: dotnet-package-steps.yml
-        - template: nuget-signing-steps.yml
+        # - template: nuget-signing-steps.yml
       - job: job_pack_nuspec
         displayName: Pack .nuspec with nuget
         condition: eq(variables.ComponentType, 'declarativeAsset')
         steps:
         - template: nuget-versioning-steps.yml
         - template: nuspec-package-steps.yml
-        - template: nuget-signing-steps.yml
+        # - template: nuget-signing-steps.yml
