@@ -114,21 +114,14 @@ stages:
                   Microsoft.Bot.Builder.Dialogs.Adaptive.Runtime
 
             # Build Bot
-            - task: MSBuild@1
+            - task: DotNetCoreCLI@2
               displayName: "Build"
               inputs:
-                solution: "$(SOLUTIONDIR)/${{ bot.project.name }}/${{ bot.project.name }}.csproj"
-                vsVersion: 16.0
-                platform: "$(BUILDPLATFORM)"
-                configuration: "$(BUILDCONFIGURATION)"
-            # - task: DotNetCoreCLI@2
-            #   displayName: "Build"
-            #   inputs:
-            #     command: publish
-            #     publishWebProjects: false
-            #     projects: "$(SOLUTIONDIR)/${{ bot.project.name }}/${{ bot.project.name }}.csproj"
-            #     arguments: "--output $(SYSTEM.DEFAULTWORKINGDIRECTORY)/${{ parameters.buildFolder }}/${{ bot.name }}"
-            #     modifyOutputPath: false
+                command: publish
+                publishWebProjects: false
+                projects: "$(SOLUTIONDIR)/${{ bot.project.name }}/${{ bot.project.name }}.csproj"
+                arguments: "--output $(SYSTEM.DEFAULTWORKINGDIRECTORY)/${{ parameters.buildFolder }}/${{ bot.name }}"
+                modifyOutputPath: false
 
             # Get BotBuilder package version
             - task: PowerShell@2
@@ -155,15 +148,15 @@ stages:
               version: "$(BOTBUILDERVERSIONNUMBER)"
 
           # Zip bot
-          - task: ArchiveFiles@2
-            displayName: 'Zip bot'
-            inputs:
-              rootFolderOrFile: '$(SOLUTIONDIR)/${{ bot.project.name }}'
-              includeRootFolder: false
-              archiveType: 'zip'
-              archiveFile: '$(SYSTEM.DEFAULTWORKINGDIRECTORY)/${{ parameters.buildFolder }}/${{ bot.name }}/${{ bot.name }}.zip'
-              replaceExistingArchive: true
-              verbose: true
+          # - task: ArchiveFiles@2
+          #   displayName: 'Zip bot'
+          #   inputs:
+          #     rootFolderOrFile: '$(SOLUTIONDIR)/${{ bot.project.name }}'
+          #     includeRootFolder: false
+          #     archiveType: 'zip'
+          #     archiveFile: '$(SYSTEM.DEFAULTWORKINGDIRECTORY)/${{ parameters.buildFolder }}/${{ bot.name }}/${{ bot.name }}.zip'
+          #     replaceExistingArchive: true
+          #     verbose: true
 
           # Upload zip to artifacts in case we want to debug it
           - task: PublishBuildArtifacts@1
