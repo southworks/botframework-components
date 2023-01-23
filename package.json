@@ -23,6 +23,7 @@
     "@azure/ms-rest-js": "2.6.4",
     "@xmldom/xmldom": "0.8.6",
     "shelljs": "^0.8.5",
-    "qs": "^6.5.3"
+    "qs": "^6.5.3",
+    "moment": "^2.29.4"
   }
 }
