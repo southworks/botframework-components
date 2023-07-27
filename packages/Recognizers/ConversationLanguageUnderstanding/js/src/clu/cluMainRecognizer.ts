@@ -124,7 +124,7 @@ export class CluMainRecognizer {
     telemetryMetrics?: Record<string, number>
   ) {
     const turnContext =
-      context instanceof DialogContext ? context.context : context;
+      context instanceof TurnContext ? context : context.context;
     const recognizer = predictionOptions ?? this.recognizerOptions;
     const cached = turnContext.turnState.get(this.cacheKey);
 
@@ -138,9 +138,9 @@ export class CluMainRecognizer {
     }
 
     const result =
-      context instanceof DialogContext
-        ? await recognizer.recognize(context, activity!, this.httpClient)
-        : await recognizer.recognize(turnContext, this.httpClient);
+      context instanceof TurnContext
+      ? await recognizer.recognize(turnContext, this.httpClient)
+      : await recognizer.recognize(context, activity!, this.httpClient)
 
     this.onRecognizerResult(
       result,

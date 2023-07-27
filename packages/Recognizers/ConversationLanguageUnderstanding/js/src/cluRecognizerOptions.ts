@@ -35,29 +35,27 @@ export class CluRecognizerOptions extends CluRecognizerOptionsBase {
     httpClient: HttpClient
   ): Promise<RecognizerResult>;
   recognize(
-    contextOrUtterance: string | TurnContext | DialogContext,
+    utteranceOrContext: string | TurnContext | DialogContext,
     activityOrHttpClient: Activity | HttpClient,
     httpClient?: HttpClient
   ): Promise<RecognizerResult> {
-    if (contextOrUtterance instanceof TurnContext) {
-      return this.recognizeWithTurnContext(
-        contextOrUtterance,
-        contextOrUtterance.activity.text,
-        httpClient!
-      );
-    } else if (contextOrUtterance instanceof DialogContext) {
-      const activity = activityOrHttpClient as Activity;
-      return this.recognizeWithTurnContext(
-        contextOrUtterance.context,
-        activity.text,
-        httpClient!
+    if (typeof utteranceOrContext === 'string') {
+      return this.recognizeWithUtterance(
+        utteranceOrContext,
+        activityOrHttpClient as HttpClient
       );
     }
 
-    return this.recognizeWithUtterance(
-      contextOrUtterance,
-      activityOrHttpClient as HttpClient
-    );
+    const [context, activity, client] =
+      utteranceOrContext instanceof TurnContext
+        ? [utteranceOrContext, utteranceOrContext.activity, httpClient]
+        : [
+            utteranceOrContext.context,
+            activityOrHttpClient as Activity,
+            httpClient,
+          ];
+
+    return this.recognizeWithTurnContext(context, activity.text, client!);
   }
 
   private async recognizeWithTurnContext(
@@ -114,7 +112,7 @@ export class CluRecognizerOptions extends CluRecognizerOptionsBase {
       [CluConstants.RequestOptions.SubscriptionKeyHeaderName]: this.application
         .endpointKey,
     });
-    const resource = new WebResource(uri.href, 'POST', body, {}, headers);
+    const resource = new WebResource(uri.href, 'POST', JSON.stringify(body), {}, headers);
     const response = await httpClient.sendRequest(resource);
 
     return response.parsedBody;
