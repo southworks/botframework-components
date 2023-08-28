@@ -25,12 +25,3 @@ stages:
         - template: yarn-package-steps.yml
         - template: debug-workspace-steps.yml
 
-  - stage: stage_build_nuget
-    displayName: '.NET: Build & Test'
-    dependsOn: [] # this removes the implicit dependency on previous stage and causes this to run in parallel
-    condition: and(eq(variables.ComponentType, 'codeExtension'), eq(variables.Language, 'dotnet'))
-    jobs:
-      - job: build_test_dotnet
-        displayName: Build and test .csproj with dotnet
-        steps:
-        - template: dotnet-build-test-steps.yml
