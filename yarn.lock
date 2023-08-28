@@ -930,10 +930,10 @@ __metadata:
   dependencies:
     "@microsoft/bot-components-teams": "workspace:packages/Teams/js"
     "@types/mocha": ^8.2.2
-    botbuilder: 4.19.3
-    botbuilder-dialogs-adaptive: 4.19.3-preview
-    botbuilder-dialogs-adaptive-testing: 4.19.3-preview
-    botframework-connector: 4.19.3
+    botbuilder: ^4.20.0
+    botbuilder-dialogs-adaptive: ^4.20.0-preview
+    botbuilder-dialogs-adaptive-testing: ^4.20.0-preview
+    botframework-connector: ^4.20.0
     eslint: ^7.30.0
     mocha: ^9.0.2
     nock: ^13.1.1
@@ -1937,33 +1937,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"adaptive-expressions@npm:4.19.3":
-  version: 4.19.3
-  resolution: "adaptive-expressions@npm:4.19.3"
-  dependencies:
-    "@microsoft/recognizers-text-data-types-timex-expression": 1.3.0
-    "@types/atob-lite": ^2.0.0
-    "@types/btoa-lite": ^1.0.0
-    "@types/lodash.isequal": ^4.5.5
-    "@types/lru-cache": ^5.1.0
-    "@types/xmldom": ^0.1.30
-    "@xmldom/xmldom": ^0.8.6
-    antlr4ts: 0.5.0-alpha.3
-    atob-lite: ^2.0.0
-    big-integer: ^1.6.48
-    btoa-lite: ^1.0.0
-    d3-format: ^1.4.4
-    dayjs: ^1.10.3
-    fast-xml-parser: ^3.19.0
-    jspath: ^0.4.0
-    lodash.isequal: ^4.5.0
-    lru-cache: ^5.1.1
-    uuid: ^8.3.2
-    xpath: ^0.0.32
-  checksum: 1e7a6f57c679d166368584b479cd91698d08ba9b148cead7b02ce4ff7e51c05c6c07857f62d10346f3fe6bbc9fa6398076070d63d5e5f18bfedcb5e10c89ebcb
-  languageName: node
-  linkType: hard
-
 "adaptive-expressions@npm:4.20.0, adaptive-expressions@npm:^4.20.0":
   version: 4.20.0
   resolution: "adaptive-expressions@npm:4.20.0"
@@ -2696,25 +2669,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"botbuilder-ai@npm:4.19.3":
-  version: 4.19.3
-  resolution: "botbuilder-ai@npm:4.19.3"
-  dependencies:
-    "@azure/cognitiveservices-luis-runtime": 2.0.0
-    "@azure/ms-rest-js": ^2.6.1
-    adaptive-expressions: 4.19.3
-    botbuilder-core: 4.19.3
-    botbuilder-dialogs: 4.19.3
-    botbuilder-dialogs-adaptive-runtime-core: 4.19.3-preview
-    botbuilder-dialogs-declarative: 4.19.3-preview
-    lodash: ^4.17.21
-    node-fetch: ^2.6.7
-    url-parse: ^1.5.9
-    zod: ~1.11.17
-  checksum: 29515fa03e2ae6a13a0b9519867d6dc53dd6717585064db72b3131d83bab842f12529d2accd3dfede9e60939fba56f2857b24060cbcc99b85000fb921f97d8e5
-  languageName: node
-  linkType: hard
-
 "botbuilder-ai@npm:4.20.0-ww.20230425":
   version: 4.20.0-ww.20230425
   resolution: "botbuilder-ai@npm:4.20.0-ww.20230425"
@@ -2792,20 +2746,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"botbuilder-core@npm:4.19.3":
-  version: 4.19.3
-  resolution: "botbuilder-core@npm:4.19.3"
-  dependencies:
-    botbuilder-dialogs-adaptive-runtime-core: 4.19.3-preview
-    botbuilder-stdlib: 4.19.3-internal
-    botframework-connector: 4.19.3
-    botframework-schema: 4.19.3
-    uuid: ^8.3.2
-    zod: ~1.11.17
-  checksum: ecde288d6ff8cfcc4742d955908837b81fee93b3c7f2ab683f9ba00d5c8ac60fd9041f8bf739189a5e28487785dd9c7539f5795cb74c50e8806dab4e10c8f99a
-  languageName: node
-  linkType: hard
-
 "botbuilder-core@npm:4.20.0":
   version: 4.20.0
   resolution: "botbuilder-core@npm:4.20.0"
@@ -2831,15 +2771,6 @@ __metadata:
     uuid: ^8.3.2
     zod: ~1.11.17
   checksum: d2b3ed08b5eb4735faf75dca24340ec0deeece6714327f8e8b77ac3fbb249a4a718d1aabd8c78fd30084c5da8358968046ff3ba6f8e036c2f4886fabb08a5084
-  languageName: node
-  linkType: hard
-
-"botbuilder-dialogs-adaptive-runtime-core@npm:4.19.3-preview":
-  version: 4.19.3-preview
-  resolution: "botbuilder-dialogs-adaptive-runtime-core@npm:4.19.3-preview"
-  dependencies:
-    dependency-graph: ^0.10.0
-  checksum: 7bffd84fdda32f0593c320d37d1b40465b2ba2df6873093117e2b11742dcdc87d258d8c80998d19867884f3f2d9ece71e11cf2488aa0740b4ae9fc68f8ab2c0f
   languageName: node
   linkType: hard
 
@@ -2898,49 +2829,24 @@ __metadata:
   languageName: node
   linkType: hard
 
-"botbuilder-dialogs-adaptive-testing@npm:4.19.3-preview":
-  version: 4.19.3-preview
-  resolution: "botbuilder-dialogs-adaptive-testing@npm:4.19.3-preview"
+"botbuilder-dialogs-adaptive-testing@npm:^4.20.0-preview":
+  version: 4.20.0-ww.preview.20230425
+  resolution: "botbuilder-dialogs-adaptive-testing@npm:4.20.0-ww.preview.20230425"
   dependencies:
-    adaptive-expressions: 4.19.3
+    adaptive-expressions: 4.20.0-ww.20230425
     bitwise: ^2.0.4
-    botbuilder-ai: 4.19.3
-    botbuilder-core: 4.19.3
-    botbuilder-dialogs: 4.19.3
-    botbuilder-dialogs-adaptive: 4.19.3-preview
-    botbuilder-dialogs-adaptive-runtime-core: 4.19.3-preview
-    botbuilder-dialogs-declarative: 4.19.3-preview
-    botbuilder-stdlib: 4.19.3-internal
+    botbuilder-ai: 4.20.0-ww.20230425
+    botbuilder-core: 4.20.0-ww.20230425
+    botbuilder-dialogs: 4.20.0-ww.20230425
+    botbuilder-dialogs-adaptive: 4.20.0-ww.preview.20230425
+    botbuilder-dialogs-adaptive-runtime-core: 4.20.0-ww.preview.20230425
+    botbuilder-dialogs-declarative: 4.20.0-ww.preview.20230425
+    botbuilder-stdlib: 4.20.0-ww.internal.20230425
     murmurhash-js: ^1.0.0
     nock: ^11.9.1
     url-parse: ^1.5.9
     zod: ~1.11.17
-  checksum: 55a677443057e8a16ca3b59805cbe24e364551fd32ab4fe6716975a8bafb659bffd7ecb5efe871547eeca81e0bd9946a713ce9883318f61ab56ea472748d9c85
-  languageName: node
-  linkType: hard
-
-"botbuilder-dialogs-adaptive@npm:4.19.3-preview":
-  version: 4.19.3-preview
-  resolution: "botbuilder-dialogs-adaptive@npm:4.19.3-preview"
-  dependencies:
-    "@microsoft/recognizers-text": ~1.1.4
-    "@microsoft/recognizers-text-choice": ~1.1.4
-    "@microsoft/recognizers-text-date-time": ~1.1.4
-    "@microsoft/recognizers-text-number": ~1.1.4
-    "@microsoft/recognizers-text-number-with-unit": ~1.1.4
-    "@microsoft/recognizers-text-sequence": ~1.1.4
-    "@microsoft/recognizers-text-suite": 1.1.4
-    adaptive-expressions: 4.19.3
-    botbuilder: 4.19.3
-    botbuilder-core: 4.19.3
-    botbuilder-dialogs: 4.19.3
-    botbuilder-dialogs-adaptive-runtime-core: 4.19.3-preview
-    botbuilder-dialogs-declarative: 4.19.3-preview
-    botbuilder-lg: 4.19.3
-    botframework-connector: 4.19.3
-    lodash: ^4.17.21
-    node-fetch: ^2.6.7
-  checksum: f6d2500b4770e1567e38376eacf4b1f06f38209390de7c151d1ab4c351c95d8c5c5af0a0cbeb832bd0f01a600c4eac68cb48020e8bd122bdb3ea0b63137c6636
+  checksum: 89c27612a0c36e1847301b1309698b82711408d216fbdeadbc7942f6c1af8ddd2e95b0afbbe4863b508d7216f46d8f25f844202e0a399e335ec580e074dd0ec1
   languageName: node
   linkType: hard
 
@@ -2969,18 +2875,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"botbuilder-dialogs-declarative@npm:4.19.3-preview":
-  version: 4.19.3-preview
-  resolution: "botbuilder-dialogs-declarative@npm:4.19.3-preview"
-  dependencies:
-    botbuilder-dialogs: 4.19.3
-    botbuilder-stdlib: 4.19.3-internal
-    chokidar: ^3.4.0
-    zod: ~1.11.17
-  checksum: 23b2e4c3f3be592f15790e70fb98fc231794655e780090d583beb6fbb37901069c8f96498f0004b9f7d534db53fd66a4d42c74c62cc2235cd9567e708866d82f
-  languageName: node
-  linkType: hard
-
 "botbuilder-dialogs-declarative@npm:4.20.0-preview":
   version: 4.20.0-preview
   resolution: "botbuilder-dialogs-declarative@npm:4.20.0-preview"
@@ -3002,25 +2896,6 @@ __metadata:
     chokidar: ^3.4.0
     zod: ~1.11.17
   checksum: faecb7efd7c3a7e03f9d99d811ed8533b280a106d711f61c496563eee0111c0fc496ff2c044e9a37c128323a67996f1890c03f73039f29fbb574f5aac6aa63e8
-  languageName: node
-  linkType: hard
-
-"botbuilder-dialogs@npm:4.19.3":
-  version: 4.19.3
-  resolution: "botbuilder-dialogs@npm:4.19.3"
-  dependencies:
-    "@microsoft/recognizers-text-choice": 1.1.4
-    "@microsoft/recognizers-text-date-time": 1.1.4
-    "@microsoft/recognizers-text-number": 1.1.4
-    "@microsoft/recognizers-text-suite": 1.1.4
-    botbuilder-core: 4.19.3
-    botbuilder-dialogs-adaptive-runtime-core: 4.19.3-preview
-    botframework-connector: 4.19.3
-    globalize: ^1.4.2
-    lodash: ^4.17.21
-    uuid: ^8.3.2
-    zod: ~1.11.17
-  checksum: 8d62f658adc65e39556a6dddbc46b62c86df0d3a8785db3ac70ff99381a62c0aae5ce24555e20ab92b75ebb6de0a9882c9d36edef1b861445227d9d413d0c546
   languageName: node
   linkType: hard
 
@@ -3062,18 +2937,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"botbuilder-lg@npm:4.19.3":
-  version: 4.19.3
-  resolution: "botbuilder-lg@npm:4.19.3"
-  dependencies:
-    adaptive-expressions: 4.19.3
-    antlr4ts: 0.5.0-alpha.3
-    lodash: ^4.17.19
-    uuid: ^8.3.2
-  checksum: f6f4079fd708959107e1bcc2a1b5b6ca91b06d3f285d412aa58510d4acbc7805e4616bfc6c069cb55e42561083b11ad2bdd4f26f54fff8317eb74e4f0de971ed
-  languageName: node
-  linkType: hard
-
 "botbuilder-lg@npm:4.20.0-ww.20230425":
   version: 4.20.0-ww.20230425
   resolution: "botbuilder-lg@npm:4.20.0-ww.20230425"
@@ -3083,13 +2946,6 @@ __metadata:
     lodash: ^4.17.19
     uuid: ^8.3.2
   checksum: 60c8f56444497ff0f65d9c201fcc0617eb6fdc9d16967760d8b0dbf7c54f654315ca948c21339ee02d5c32cf440abb39f513bc6cb04f811b9d41a1612a96a885
-  languageName: node
-  linkType: hard
-
-"botbuilder-stdlib@npm:4.19.3-internal":
-  version: 4.19.3-internal
-  resolution: "botbuilder-stdlib@npm:4.19.3-internal"
-  checksum: b372e6718de6664b560ed478cfc00c00eb72d09d0b0bdf589adedb237acaa8ec674c067c4dc2802ea7c2e6ab74954368e40b603d730a1c1da7d5ea71b0004e76
   languageName: node
   linkType: hard
 
@@ -3104,26 +2960,6 @@ __metadata:
   version: 4.20.0-ww.internal.20230425
   resolution: "botbuilder-stdlib@npm:4.20.0-ww.internal.20230425"
   checksum: b5642ca4aa4c670575f0636eb01eb556cbcb5e52a3e5ab09ced770cd07e95ed0cf0d925f2cc99126bb84566f5f6cd4c60bdbb8b5aa511db3451cb5bf78b4cb1f
-  languageName: node
-  linkType: hard
-
-"botbuilder@npm:4.19.3":
-  version: 4.19.3
-  resolution: "botbuilder@npm:4.19.3"
-  dependencies:
-    "@azure/ms-rest-js": ^2.6.1
-    axios: ^0.25.0
-    botbuilder-core: 4.19.3
-    botbuilder-stdlib: 4.19.3-internal
-    botframework-connector: 4.19.3
-    botframework-streaming: 4.19.3
-    dayjs: ^1.10.3
-    filenamify: ^4.1.0
-    fs-extra: ^7.0.1
-    htmlparser2: ^6.0.1
-    uuid: ^8.3.2
-    zod: ~1.11.17
-  checksum: cba61d98688b7db7f08960e7b12dc1b95f1db88364c26d0fd41a9b6f9a4b483fac811f46c502413e048b8086639c2c43d551e3be5d2cf51e8f66dbd770ef3752
   languageName: node
   linkType: hard
 
@@ -3168,25 +3004,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"botframework-connector@npm:4.19.3":
-  version: 4.19.3
-  resolution: "botframework-connector@npm:4.19.3"
-  dependencies:
-    "@azure/identity": ^2.0.4
-    "@azure/ms-rest-js": ^2.6.1
-    adal-node: 0.2.3
-    axios: ^0.25.0
-    base64url: ^3.0.0
-    botbuilder-stdlib: 4.19.3-internal
-    botframework-schema: 4.19.3
-    cross-fetch: ^3.0.5
-    jsonwebtoken: ^9.0.0
-    rsa-pem-from-mod-exp: ^0.8.4
-    zod: ~1.11.17
-  checksum: 738b022a55e0984c6db024056b092ebc986026e76ab90d9577ce9fe8202aca452eb01bb5a5a276bbec8a87cce7d4961bcfb20e946b935b8d104c8fb06b1949ab
-  languageName: node
-  linkType: hard
-
 "botframework-connector@npm:4.20.0, botframework-connector@npm:^4.20.0":
   version: 4.20.0
   resolution: "botframework-connector@npm:4.20.0"
@@ -3225,16 +3042,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"botframework-schema@npm:4.19.3":
-  version: 4.19.3
-  resolution: "botframework-schema@npm:4.19.3"
-  dependencies:
-    uuid: ^8.3.2
-    zod: ~1.11.17
-  checksum: 19a041be65b51e2521f72e00decd4a080445b9359a00280b2436accfe8ebbd408a66064c8f15d49c1f5147d8a4aa7bafb07e4c90178fa039b96e887d607f6aba
-  languageName: node
-  linkType: hard
-
 "botframework-schema@npm:4.20.0":
   version: 4.20.0
   resolution: "botframework-schema@npm:4.20.0"
@@ -3252,18 +3059,6 @@ __metadata:
     uuid: ^8.3.2
     zod: ~1.11.17
   checksum: 2c6980904336377ba9511e3cbb788ce1e04a3fccde2ca6a3681f7180d80d3a8d5c7853abbba855845bc97fc54b1048fa6b7f0ac8c68f07ba048e0e4e98986169
-  languageName: node
-  linkType: hard
-
-"botframework-streaming@npm:4.19.3":
-  version: 4.19.3
-  resolution: "botframework-streaming@npm:4.19.3"
-  dependencies:
-    "@types/node": ^10.17.27
-    "@types/ws": ^6.0.3
-    uuid: ^8.3.2
-    ws: ^7.1.2
-  checksum: 4e511b77eff4d03da78854a03300575669c3428a7891cfd5e8012799a4b8fbd4e5792c78aac268acdbf1b4e7dd8312ff32522e8bd28f1d27d174ebcc4c84c7bd
   languageName: node
   linkType: hard
 
@@ -3831,10 +3626,10 @@ __metadata:
     "@types/mocha": ^8.2.2
     "@types/sinon": ^10.0.16
     "@types/uuid": ^9.0.2
-    botbuilder: 4.19.3
-    botbuilder-dialogs-adaptive: 4.19.3-preview
-    botbuilder-dialogs-adaptive-testing: 4.19.3-preview
-    botframework-connector: 4.19.3
+    botbuilder: ^4.20.0
+    botbuilder-dialogs-adaptive: ^4.20.0-preview
+    botbuilder-dialogs-adaptive-testing: ^4.20.0-preview
+    botframework-connector: ^4.20.0
     clu-recognizer: "workspace:packages/Recognizers/ConversationLanguageUnderstanding/js"
     eslint: ^7.30.0
     mocha: ^9.0.2
