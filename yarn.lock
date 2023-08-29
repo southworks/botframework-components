@@ -1937,7 +1937,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"adaptive-expressions@npm:4.20.0, adaptive-expressions@npm:~4.20.0":
+"adaptive-expressions@npm:4.20.0":
   version: 4.20.0
   resolution: "adaptive-expressions@npm:4.20.0"
   dependencies:
@@ -1961,33 +1961,6 @@ __metadata:
     uuid: ^8.3.2
     xpath: ^0.0.32
   checksum: a1c48ecd26c35031fe5678d976f877160659bb029fb59c8025faa474a5677e56b441f1f1dffac81f7daafad461879c0387e1ed2647f80c7f2955d4ab158e219c
-  languageName: node
-  linkType: hard
-
-"adaptive-expressions@npm:4.20.0-ww.20230425":
-  version: 4.20.0-ww.20230425
-  resolution: "adaptive-expressions@npm:4.20.0-ww.20230425"
-  dependencies:
-    "@microsoft/recognizers-text-data-types-timex-expression": 1.3.0
-    "@types/atob-lite": ^2.0.0
-    "@types/btoa-lite": ^1.0.0
-    "@types/lodash.isequal": ^4.5.5
-    "@types/lru-cache": ^5.1.0
-    "@types/xmldom": ^0.1.30
-    "@xmldom/xmldom": ^0.8.6
-    antlr4ts: 0.5.0-alpha.3
-    atob-lite: ^2.0.0
-    big-integer: ^1.6.48
-    btoa-lite: ^1.0.0
-    d3-format: ^1.4.4
-    dayjs: ^1.10.3
-    fast-xml-parser: ^3.19.0
-    jspath: ^0.4.0
-    lodash.isequal: ^4.5.0
-    lru-cache: ^5.1.1
-    uuid: ^8.3.2
-    xpath: ^0.0.32
-  checksum: 75c85c4b065a09d63485c72549ed6fcea528ab807055550b4360a62b07668ade029ec50536eda9fdacf32707bc3036578ab0cb7e49aed9afc2be7b7ea39278d6
   languageName: node
   linkType: hard
 
@@ -2780,15 +2753,6 @@ __metadata:
   dependencies:
     dependency-graph: ^0.10.0
   checksum: 1b21bb2e097bdf059965446fbdcec505db2c3584652736cb7a06ad273d5e644ec4efc4eafc12f99eccec7634516428f658c8b5724ff1f696a8450ee957b6f155
-  languageName: node
-  linkType: hard
-
-"botbuilder-dialogs-adaptive-runtime-core@npm:4.20.0-ww.preview.20230425, botbuilder-dialogs-adaptive-runtime-core@npm:~4.20.0-preview":
-  version: 4.20.0-ww.preview.20230425
-  resolution: "botbuilder-dialogs-adaptive-runtime-core@npm:4.20.0-ww.preview.20230425"
-  dependencies:
-    dependency-graph: ^0.10.0
-  checksum: 43debd83ada421d69d24d165e3abb6797d7bcf3a58540ab1d2545dfa3eafef67f71d93da93a6348ede3a505c81f1601a1a44db2cf5ab91a02195e6cbc39e5fc8
   languageName: node
   linkType: hard
 
@@ -5090,17 +5054,6 @@ __metadata:
   version: 2.0.6
   resolution: "fast-levenshtein@npm:2.0.6"
   checksum: a2d03af3088b0397633e007fb3010ecfa4f91cae2116d2385653c59396a1b31467641afa672a79e6f82218518670dc144128378124e711e35dbf90bc82846f22
-  languageName: node
-  linkType: hard
-
-"fast-xml-parser@npm:^3.19.0":
-  version: 3.21.1
-  resolution: "fast-xml-parser@npm:3.21.1"
-  dependencies:
-    strnum: ^1.0.4
-  bin:
-    xml2js: cli.js
-  checksum: 8de6a5803ba44b206b8733b22ce0d3e8433203e3e6f0328a1a130f952ec22e32cda9a5fb8f4df2fbee32552ff7eb973f56135352c98533e3d66d6dd2a1304516
   languageName: node
   linkType: hard
 
@@ -11090,7 +11043,7 @@ resolve@1.1.7:
   languageName: node
   linkType: hard
 
-"strnum@npm:^1.0.4, strnum@npm:^1.0.5":
+"strnum@npm:^1.0.5":
   version: 1.0.5
   resolution: "strnum@npm:1.0.5"
   checksum: 8b73ef3de223bd07c662d1983fbadbfc8faedbbd75322e4d03a334e48ca5ca405d960a106bf7163f9f528e831b8cb173b9c9896bc37d6f97f8c78f8dd93ad7a2
