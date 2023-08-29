@@ -30,8 +30,6 @@
     "moment": "^2.29.4",
     "minimist": "^1.2.7",
     "qs": "^6.5.3",
-    "shelljs": "^0.8.5",
-    "adaptive-expressions": "4.20.0",
-    "botbuilder-dialogs-adaptive-runtime-core": "4.20.0-preview"
+    "shelljs": "^0.8.5"
   }
 }
