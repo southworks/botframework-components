@@ -1937,7 +1937,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"adaptive-expressions@npm:4.20.0, adaptive-expressions@npm:^4.20.0":
+"adaptive-expressions@npm:4.20.0":
   version: 4.20.0
   resolution: "adaptive-expressions@npm:4.20.0"
   dependencies:
@@ -1961,33 +1961,6 @@ __metadata:
     uuid: ^8.3.2
     xpath: ^0.0.32
   checksum: a1c48ecd26c35031fe5678d976f877160659bb029fb59c8025faa474a5677e56b441f1f1dffac81f7daafad461879c0387e1ed2647f80c7f2955d4ab158e219c
-  languageName: node
-  linkType: hard
-
-"adaptive-expressions@npm:4.20.0-ww.20230425":
-  version: 4.20.0-ww.20230425
-  resolution: "adaptive-expressions@npm:4.20.0-ww.20230425"
-  dependencies:
-    "@microsoft/recognizers-text-data-types-timex-expression": 1.3.0
-    "@types/atob-lite": ^2.0.0
-    "@types/btoa-lite": ^1.0.0
-    "@types/lodash.isequal": ^4.5.5
-    "@types/lru-cache": ^5.1.0
-    "@types/xmldom": ^0.1.30
-    "@xmldom/xmldom": ^0.8.6
-    antlr4ts: 0.5.0-alpha.3
-    atob-lite: ^2.0.0
-    big-integer: ^1.6.48
-    btoa-lite: ^1.0.0
-    d3-format: ^1.4.4
-    dayjs: ^1.10.3
-    fast-xml-parser: ^3.19.0
-    jspath: ^0.4.0
-    lodash.isequal: ^4.5.0
-    lru-cache: ^5.1.1
-    uuid: ^8.3.2
-    xpath: ^0.0.32
-  checksum: 75c85c4b065a09d63485c72549ed6fcea528ab807055550b4360a62b07668ade029ec50536eda9fdacf32707bc3036578ab0cb7e49aed9afc2be7b7ea39278d6
   languageName: node
   linkType: hard
 
@@ -5090,17 +5063,6 @@ __metadata:
   version: 2.0.6
   resolution: "fast-levenshtein@npm:2.0.6"
   checksum: a2d03af3088b0397633e007fb3010ecfa4f91cae2116d2385653c59396a1b31467641afa672a79e6f82218518670dc144128378124e711e35dbf90bc82846f22
-  languageName: node
-  linkType: hard
-
-"fast-xml-parser@npm:^3.19.0":
-  version: 3.20.3
-  resolution: "fast-xml-parser@npm:3.20.3"
-  dependencies:
-    strnum: ^1.0.4
-  bin:
-    xml2js: cli.js
-  checksum: 8ecde8868ea5465b1b11a473f35649641dcd8a97de102d5a42179401465ebb259006e6e2f8eb2544b2bc908972816941d5b45970665125273713a68a3617ed80
   languageName: node
   linkType: hard
 
@@ -11087,13 +11049,6 @@ resolve@1.1.7:
   dependencies:
     escape-string-regexp: ^1.0.2
   checksum: 5a01031e8b6662fbc2397360916e0b8ee66cc74c15a292c15ab82b5067728165ad730fa5289b12c2875e17660e21450515958a83636462bba3900ea5bc964082
-  languageName: node
-  linkType: hard
-
-"strnum@npm:^1.0.4":
-  version: 1.0.4
-  resolution: "strnum@npm:1.0.4"
-  checksum: 9edf1ca1846c81ea947f058bcd3b7f64f3873815ba8b491dc3f9194975c13269e7a9969ca44ce99d49fef10cb1a8e42cb9a681ad20f4034bbaf8a1e39d26844a
   languageName: node
   linkType: hard
 
