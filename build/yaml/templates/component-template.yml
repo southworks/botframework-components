@@ -14,7 +14,7 @@ stages:
 
   - stage: stage_package_node
     displayName: 'Node: Build, Test, Version & Pack'
-    condition: and(or(eq(variables.ComponentType, 'declarativeAsset'), eq(variables.ComponentType, 'generator'), and(eq(variables.ComponentType, 'codeExtension'), eq(variables.Language, 'js'))), eq(variables.PublishPackageArtifacts, true))
+    condition: and(or(eq(variables.ComponentType, 'declarativeAsset'), eq(variables.ComponentType, 'generator'), and(eq(variables.ComponentType, 'codeExtension'), eq(variables.Language, 'js'))), not(eq(variables.PublishPackageArtifacts, true)))
     jobs:
       - job: pack_npm
         displayName: 'Build & Pack Node project'
