@@ -2756,15 +2756,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"botbuilder-dialogs-adaptive-runtime-core@npm:4.20.0-ww.preview.20230425, botbuilder-dialogs-adaptive-runtime-core@npm:^4.20.0-preview":
-  version: 4.20.0-ww.preview.20230425
-  resolution: "botbuilder-dialogs-adaptive-runtime-core@npm:4.20.0-ww.preview.20230425"
-  dependencies:
-    dependency-graph: ^0.10.0
-  checksum: 43debd83ada421d69d24d165e3abb6797d7bcf3a58540ab1d2545dfa3eafef67f71d93da93a6348ede3a505c81f1601a1a44db2cf5ab91a02195e6cbc39e5fc8
-  languageName: node
-  linkType: hard
-
 "botbuilder-dialogs-adaptive-runtime-integration-express@npm:^4.20.0-preview":
   version: 4.20.0-ww.preview.20230425
   resolution: "botbuilder-dialogs-adaptive-runtime-integration-express@npm:4.20.0-ww.preview.20230425"
